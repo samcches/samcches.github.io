@@ -1,11 +1,11 @@
 # Site settings
 author: Shannon McChesney
-title: 
+title: Intuitive Coding
 header-img: img/home-bg.png
 email: samcches@gmail.com
 copyright_name: Shannon McChesney
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Making the Transition into Data Science
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  samcches
