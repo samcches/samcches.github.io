@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Why is This House So Expensive?!"
-date:       2019-01-25 23:21:39 +0000
+date:       2019-01-25 18:21:40 -0500
 permalink:  why_is_this_house_so_expensive
 ---
 
@@ -36,19 +36,19 @@ How can we tell that? Easy. The key on the side of the heat map indicates the da
 ### The Process
 Heat maps are great for visualizing the relationships between variables, or if they exist. They are also one of the many useful features of the Python package, Seaborn. The code used for this diagram is below:
 
-sns.set(style="white")
+    sns.set(style="white")
 
-corr = data.corr()
+    corr = data.corr()
 
-mask = np.zeros_like(corr, dtype=np.bool)
-mask[np.triu_indices_from(mask)] = True
+    mask = np.zeros_like(corr, dtype=np.bool)
+    mask[np.triu_indices_from(mask)] = True
 
 
-f, ax = plt.subplots(figsize=(11, 9))
+    f, ax = plt.subplots(figsize=(11, 9))
 
-cmap = sns.diverging_palette(220, 10, as_cmap=True)
+    cmap = sns.diverging_palette(220, 10, as_cmap=True)
 
-sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0, square=True, linewidths=.5, cbar_kws= {"shrink": .5})
+    sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0, square=True, linewidths=.5, cbar_kws= {"shrink": .5})
 
 
 First, we import the package and give it its shorthand name. Then, a mask is applied to give its diagonal shape. If this is not important to you and you don’t mind a square matrix heat map, you don’t have to use it. 
@@ -57,38 +57,38 @@ Finally, the axis information is encoded.
 
 From here, we can go on to test any of the relationships that catch our eye from the heat map. It makes a great starting point for posing questions in a multivariable analysis, and helps prevent us from wasting valuable time (and processing power) pursuing variable that have no relationship to one another. 
 
-### Next Steps: 
+### Next Steps:&#x2028;
 If we’re unsure which questions we want to ask, test the most vibrantly-colored squares with a correlation algorithm:
 
-import math
-def mean_normalize(var):
+    import math
+    def mean_normalize(var):
 
-    norm = []
-    n = 0
-    mean = np.mean(var)
+        norm = []
+        n = 0
+        mean = np.mean(var)
     
-    for i in var:
-        diff = var[n] - mean
-        norm.append(diff)
-        n = n + 1
+        for i in var:
+            diff = var[n] - mean
+            norm.append(diff)
+            n = n + 1
     
-    return norm
+        return norm
 
-def correlation(var1,var2):
-    if len(var1) != len(var2):
-        return None
-    else: 
-        mean_norm_var1 = mean_normalize(var1)
-        mean_norm_var2 = mean_normalize(var2)
+    def correlation(var1,var2):
+        if len(var1) != len(var2):
+            return None
+        else: 
+            mean_norm_var1 = mean_normalize(var1)
+            mean_norm_var2 = mean_normalize(var2)
         
-        var1_dot_var2 = [a * b for a, b in list(zip(mean_norm_var1, mean_norm_var2))]
-        var1_squared = [i * i for i in mean_norm_var1]
-        var2_squared = [i * i for i in mean_norm_var2]
+             var1_dot_var2 = [a * b for a, b in list(zip(mean_norm_var1, mean_norm_var2))]
+             var1_squared = [i * i for i in mean_norm_var1]
+             var2_squared = [i * i for i in mean_norm_var2]
         
-        return np.round(sum(var1_dot_var2) / math.sqrt(sum(var1_squared) * sum(var2_squared)), 2)
+            return np.round(sum(var1_dot_var2) / math.sqrt(sum(var1_squared) * sum(var2_squared)), 2)
     
 
-correlation(data['price'], data['bathrooms'])
+    correlation(data['price'], data['bathrooms'])
 
 First, we import the math package. Then we define a function which normalizes the mean by setting ‘norm’ as an empty list, set ’n’ to zero, and call the mean for the variable. 
 
