@@ -19,7 +19,7 @@ To test this piece of conventional wisdom, I took a look at housing data from Ki
 
 After tidying up the data, I used a heat map to visualize the relationships between the various data columns:
 
-![image](https://github.com/samcches/dsc-1-final-project-online-ds-sp-000/blob/master/output_22_1.png)
+![image](https://github.com/samcches/dsc-1-final-project-online-ds-sp-000/blob/master/output_22_1.png?raw=true)
 
 If you're like me, your eye jumps immediately towards the bright red positive correlations and the bold blue negative correlations—but let’s restrain ourselves for a moment (we are scientists-in-training, after all) and focus on our initial question: Is location the primary variable influencing price?
 
