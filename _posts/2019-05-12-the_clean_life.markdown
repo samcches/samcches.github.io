@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The Clean Life"
-date:       2019-05-12 16:30:27 +0000
+date:       2019-05-12 12:30:28 -0400
 permalink:  the_clean_life
 ---
 
@@ -25,12 +25,12 @@ So how does one accomplish this?
 #### *Standarization*
 Standardization is a technique commonly used in order to eliminated outliers and acheive a more accurate mean. To do this we subtract the mean from the data and divide it by the standard deviation as seen below.
 
-![](https://www.dropbox.com/s/y5lpjgwx9tbpprd/Xstand.tex?dl=0)
+![](https://www.dropbox.com/s/l51qk1wiq3bszsh/Xstand.jpg?dl=0)
 
 #### *Normalization*
 Data is normalized in order eliminate negative values. It is done by subtracting the minimum data point from each individual data point and dividing that by the difference between the maximum point and minimum point as seen in the equation below.
 
-![](https://www.dropbox.com/s/9v1jw5aebg9cmx8/Xnorm.tex?dl=0)
+![](https://www.dropbox.com/s/u84fhrrei5q6fqr/Xnorm.tex.jpg?dl=0)
 
 This prevents negative values in the data set and rescales the data to values between zero and one.
 
