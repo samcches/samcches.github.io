@@ -11,7 +11,7 @@ Some people love to clean. Some people adore the sudsy warm water on their hands
 I have never been one of those people. I prefer to operate inside a system of organized chaos, clothes hung up at best and strewn across the floor in relative piles of once-worn and offensively filthy at worst. I used to wash dishes as I needed them and only cleaned out the fridge when things began to mold—until now.
 
 Whether my newfound love for cleaning is because I finally have a one-bedroom apartment to myself, a recent addiction to [The Grove](https://www.grove.co/referrer/48888912/), or my plunge into data science, I will never know. But as I excitedly opened my box of Mrs. Meyer’s cleaning supplies, I was forced to confront a new sensation. Was I looking forward to cleaning products that didn’t smell chemically-harsh for once? Or was I genuinely beginning to appreciate a new form of organization?
-
+![Imgur](https://i.imgur.com/LxHsUGT.jpg)
 Or, worst of all, had turning thirty actually changed my mentality so that I now valued tidiness as a core principle of my adult life? *(Cue dramatic crisis sound effects)*
 
 When skeptics hear about analysts “cleaning data” their first thought may turn to corrupt governments and corporations changing existing data so as to fit their own purposes. While I’ll be the first to say that any organization with human beings is subject to at least a little corruption (stealing office supplies counts: you know who you are), data scientists are rarely the ones purposely misusing data—it simply goes against what we’ve been trained to do. 
@@ -25,12 +25,12 @@ So how does one accomplish this?
 #### *Standarization*
 Standardization is a technique commonly used in order to eliminated outliers and acheive a more accurate mean. To do this we subtract the mean from the data and divide it by the standard deviation as seen below.
 
-![](https://www.dropbox.com/s/l51qk1wiq3bszsh/Xstand.jpg?dl=0)
+![](https://i.imgur.com/apx6egU.jpg)
 
 #### *Normalization*
 Data is normalized in order eliminate negative values. It is done by subtracting the minimum data point from each individual data point and dividing that by the difference between the maximum point and minimum point as seen in the equation below.
 
-![](https://www.dropbox.com/s/u84fhrrei5q6fqr/Xnorm.tex.jpg?dl=0)
+![](https://i.imgur.com/7BwtKy8.jpg)
 
 This prevents negative values in the data set and rescales the data to values between zero and one.
 
