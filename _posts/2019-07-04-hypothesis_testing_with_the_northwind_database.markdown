@@ -1,12 +1,12 @@
 ---
 layout: post
-title:      "Hypothesis Testing with the Northwind Database#"
-date:       2019-07-05 00:43:06 +0000
+title:      "Hypothesis Testing with the Northwind Database"
+date:       2019-07-04 20:43:07 -0400
 permalink:  hypothesis_testing_with_the_northwind_database
 ---
 
 
-## About the Project##
+## About the Project
 The Northwind Database was created by Microsoft to simulate a real-world business database through which data analysts can create statistical models and test business-related hypotheses. As a real-world simulation, it also contains imperfections, which analysts may encounter in their day-to-day work.
 
 Our goal in this project was to ask at least four questions that we could test using the data accumulated by the fictional Northwind. These questions will be of primary importance to stakeholders. 
@@ -14,9 +14,9 @@ Our goal in this project was to ask at least four questions that we could test u
 H,,0,, is known as the null hypothesis; it’s our currently accepted base statement, which our experiment will either reject or accept. H,,a,, is known as the alternative hypothesis, which becomes a possibility once our null hypothesis is rejected.
 
 
-## 1. Do Discounts Affect the Number of Products Sold? ##
+## 1. Do Discounts Affect the Number of Products Sold? 
 
-### The Process###
+### The Process
 For our first question, we want to know if discounts affect the number of products sold. Our null and alternative hypotheses are then:
 * H,,0,,: Discounts do not affect the number of products sold.
 * H,,a,,: Discounts affect the number of products sold.
@@ -86,8 +86,10 @@ plt.xlabel('Product ID')
 plt.ylabel('Average Quantity')
 plt.show()
 ```
-![](https://imgur.com/QTGZ3M7)
-### Testing for Statistical Significance###
+
+![](https://i.imgur.com/QTGZ3M7.png)
+
+### Testing for Statistical Significance
 We will use the bootstrap sampling method to perform our resampling calculations and Cohen’s d to measure the effect size.
 ```
 def bootstrap(sample, n):
@@ -123,15 +125,15 @@ for i in discounts:
 discounts_significance_df
 ```
 
-We can see that the discounts of 1%, 2%, 3%, 4%, and 6% are two small to be relevant to our test. 
-![](http://)
+We can see from the results that the discounts of 1%, 2%, 3%, 4%, and 6% are two small to be relevant to our test. 
 
-### Results###
-We can see that for the discounts of 5%, 10%, 15%, 20%, and 25% offering a discount affects the total number of products sold.
+
+### Results
+We can also see that for the discounts of 5%, 10%, 15%, 20%, and 25% offering a discount affects the total number of products sold.
 
 Our next step will be to find out if there is a statistically significant difference amongst the discounts.
 
-### 1B. Is there a statistically significant difference amongst the discounts given?###
+### 1B. Is there a statistically significant difference amongst the discounts given?
 * H,,0,,: There is no statistically significant difference between the discounts.
 * H,,a,,: There is a statistically significant difference between the discounts.
 
@@ -154,7 +156,7 @@ for i in comb:
 discount_levels_df.sort_values('Cohens d', ascending=False)
 ```
 
-### Results###
+### Results
 There is no statistically significant difference between the discounts. So, while we can advise Northwind that providing a discount does indicate an increase in the number of products sold, the level of discount makes no statistical difference.
 
 ## 2. Effect of Discounts on Total Sale Price
@@ -197,10 +199,10 @@ plt.legend()
 plt.show()
 ```
 
-![](https://imgur.com/SubcMy5)
-![](https://imgur.com/y9tCswg)
+![](https://i.imgur.com/SubcMy5.png)
+![](https://i.imgur.com/y9tCswg.png)
 
-### Results###
+### Results
 We can see that the mean total sale price of orders with discounts is greater than the mean total sale price of orders without discounts.
 ```
 discounts_levels_price_df = pd.DataFrame(columns=['Discount %','Null Hypothesis','Cohens d'], index=None)
@@ -240,7 +242,7 @@ for i in comb:
 
 discount_levels_price_diff_df.sort_values('Cohens d', ascending=False)
 ```
-### Results###
+### Results
 Interestingly, unlike when considering total number of products with each discount, there is a statistically significant difference between certain discounts when considering the total amount a customer spends per order.
 
 This makes sense, however, as a customer on-the-fence regarding the order may decide that a discount of 25% is within their purchasing abilities as opposed to only 10%. The same theory applies to the difference between 5% and 10%. 
@@ -273,7 +275,7 @@ plt.legend('')
 plt.show()
 ```
 
-![](https://imgur.com/BprMgKd)
+![](https://i.imgur.com/BprMgKd.png)
 
 At last we can take the perform an ANOVA test.
 ```
@@ -287,10 +289,10 @@ table = sm.stats.anova_lm(lm, typ=2)
 print(table)
 ```
 
-### Results###
+### Results
 There is no statististically significant difference in the number of orders in any given month. The holiday season does not seem to affect the number of orders placed. 
 
-## 4. Are women or men more productive in the workplace?##
+## 4. Are women or men more productive in the workplace?
 
 To test this we need to decide on a measure of productivity. A quick inspection of the job titles reveals that the majority of the employees are sales representatives. We will measure their productivity by the number of orders they completed.
 
@@ -312,7 +314,7 @@ plt.legend()
 plt.show()
 ```
 
-![](https://imgur.com/2zl3bTO)
+![](https://i.imgur.com/2zl3bTO.png)
 
 We then run a t-test and calculate Cohen’s d to measure effect size:
 ```
@@ -321,12 +323,12 @@ stats.ttest_ind(male_salesreps_df['COUNT('], female_salesreps_df['COUNT('])
 Cohen_d(male_salesreps_df['COUNT('], female_salesreps_df['COUNT('])
 ```
 
-### Results###
+### Results
 We can see from Cohen’s d that the effect size is very large, indicating we are trying to compare two unequal groups. Therefore, even though we can see that 75% of the female employees complete more sales than their male counterparts, we cannot say that there is a statistically significant difference because the samples are not comparative. 
 
 I believe that if there were an equal number of male and female sales representatives, we may see a different result. However, with the information given, we cannot say that there is any statistically significant difference between the productivity of men and the productivity of women as measured by the number of orders filled.
 
-## In Summary:##
+## In Summary:
 By utilizing databases from fictional yet realistic companies like Northwind, data science students can practice formulating and testing hypotheses, visualizing data, and interpreting their results in the same way they would be expected in their future career.
 
 The correct application and interpretation of t-tests and effect sizes are vital to the burgeoning data scientist, as is the efficient synthesis of SQL and Pandas. If you have any questions about this post or the contain within, please feel free to comment below or DM me.
