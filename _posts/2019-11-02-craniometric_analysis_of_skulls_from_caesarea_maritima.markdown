@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Craniometric Analysis of Skulls from Caesarea Maritima"
-date:       2019-11-02 20:32:45 +0000
+date:       2019-11-02 16:32:49 -0400
 permalink:  craniometric_analysis_of_skulls_from_caesarea_maritima
 ---
 
