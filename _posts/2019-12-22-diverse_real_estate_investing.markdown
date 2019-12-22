@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Diverse Real Estate Investing"
-date:       2019-12-22 18:55:49 +0000
+date:       2019-12-22 13:55:50 -0500
 permalink:  diverse_real_estate_investing
 ---
 
@@ -21,8 +21,8 @@ The following properties have shown to be high-growth investments in the New Yor
 4. Jersey City, NJ	07307
 5. Noyack, NY	11963
  
- [Imgur](https://i.imgur.com/3dKisIN.png)
- 
+![Imgur](https://i.imgur.com/3dKisIN.png)
+
 As prices in Manhattan remain extremely high for most neighborhoods, growth opportunities nearby in Brooklyn and Jersey City are unsurprising. 
 
 #### Local + Potential:
@@ -33,7 +33,7 @@ The following properties show that they have yet to have substantial growth and 
 4. Vernon Valley, NJ	07418
 5. Goldens Bridge, NY	10526
 
-[Imgur](https://i.imgur.com/sgBgJr9.png)
+![Imgur](https://i.imgur.com/sgBgJr9.png)
 
 These locations are ideal for people who are former New Yorkers ready for less chaotic, more suburban existence. They are about an hour and a half from New York.
 
@@ -45,7 +45,7 @@ The following locations have shown continued growth over the past twenty years.
 4. Pittsburgh, PA	15201
 5. Hertford, NC	27980
 
-[Imgur](https://i.imgur.com/QVRYTXF.png)
+![Imgur](https://i.imgur.com/QVRYTXF.png)
 
 As many startups continue to move out of the traditional hubs of New York City and Silicon Valley and into smaller, more affordable cities, the property values continue to increase. With the growth of these companies will follow growth of real estate value.
 
@@ -57,7 +57,7 @@ These locations have greatest losses or have yet to see any marked gains over th
 4. Johnstown, PA	15902
 5. Capron, IL	11963
 
-[Imgur](https://i.imgur.com/geOwHtA.png)
+![Imgur](https://i.imgur.com/geOwHtA.png)
 
 The two zip codes with the greatest percent losses are both in Flint, Michigan. Considering the poisoning of the local water source in 2014, this is unsurprising. It does, however, show great potential for companies with a strong philanthropic drive and long-term vision. If a company or coalition of companies invested in rehabilitating Flint and other cities suffering from similar problems, the long-term financial profits and moral reward would be significant.
 
