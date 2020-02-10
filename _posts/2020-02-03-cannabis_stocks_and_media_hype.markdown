@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Cannabis Stocks and Media Hype"
-date:       2020-02-03 18:12:57 +0000
+date:       2020-02-03 13:12:58 -0500
 permalink:  cannabis_stocks_and_media_hype
 ---
 
 
 The first rule of investing advice I remember receiving was from Nicole Lapin’s book “Rich Bitch”. In it she said, 
 > “Never take a stock tip…Why? Because your timing may be different from when the “tipper” gets into and out of the stock. Trust your on research and judgement.”
-> 
+ 
 But unless you’re an experienced day-trader, picking the right investment can often feel overwhelming and confusing. And the fear of missing out on an investment you truly believe in can be too powerful a temptation. It doesn’t help that smaller public companies are often unknown to laymen until they are mentioned on Bloomberg, CNBC, or another economic media company. 
 
 For example, if you are a believer in the legalization of marijuana and would like to get an early in on cannabis stocks, how do you choose a company in which to invest? Unless the company has cannabis in its name, it won’t show up on a search of your investment platform’s listings. Instead, these stock are listed under more general categories. On Fidelity’s site, Tilray, Inc. (TLRY) is listed as a Common Stock in the Healthcare category, under the subcategory of Pharmaceuticals. 
