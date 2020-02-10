@@ -15,7 +15,7 @@ For example, if you are a believer in the legalization of marijuana and would li
 
 As a result, we must to some extent rely upon the media. But what happens when media hype over-inflates expectations? 
 
-Cannabis stocks have for a few years now been hyped up as the new "tech stocks", promising to be to current investors what Apple and Microsoft were decades ago. With marijuana fully legalized in Canada, and fully legal status or reduced decriminalization in thirty-seven of the United States, many investors jumped onboard in 2018 when major cannabis companies, some believing in the product, others believing in the profit.
+Cannabis stocks have for a few years now been hyped up as the new "tech stocks", promising to be to current investors what Apple and Microsoft were decades ago. With marijuana fully legalized in Canada, and fully legal status or reduced decriminalization in thirty-seven of the United States, many investors jumped onboard in 2018 when major cannabis companies launched on the NYSE, some believing in the product, others believing in the profit.
 
 As the demand for the stocks increased, certain stocks saw near-exponential growth, to the wonder and admiration of investors and analysts alike. But how much of that growth was a natural reflection on the product and how much was artificially inflated hype?
 
