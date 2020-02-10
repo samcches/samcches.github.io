@@ -7,7 +7,7 @@ permalink:  cannabis_stocks_and_media_hype
 
 
 The first rule of investing advice I remember receiving was from Nicole Lapin’s book “Rich Bitch”. In it she said, 
-> “Never take a stock tip…Why? Because your timing may be different from when the “tipper” gets into and out of the stock. Trust your on research and judgement.”
+> “Never take a stock tip…Why? Because your timing may be different from when the “tipper” gets into and out of the stock. Trust your own research and judgement.”
  
 But unless you’re an experienced day-trader, picking the right investment can often feel overwhelming and confusing. And the fear of missing out on an investment you truly believe in can be too powerful a temptation. It doesn’t help that smaller public companies are often unknown to laymen until they are mentioned on Bloomberg, CNBC, or another economic media company. 
 
